@@ -1,4 +1,4 @@
-import dlib
+
 import face_recognition_models
 from sklearn.svm import SVC
 import numpy as np
