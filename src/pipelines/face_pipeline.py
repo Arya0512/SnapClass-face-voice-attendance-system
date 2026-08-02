@@ -1,5 +1,5 @@
 
-import face_recognition_models
+import face_recognition
 from sklearn.svm import SVC
 import numpy as np
 import streamlit as st
