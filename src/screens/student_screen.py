@@ -12,8 +12,7 @@ from src.components.dialog_enroll import enroll_subject
 from src.components.subject_card import subject_card
 
 
-if "show_registration" not in st.session_state:
-    st.session_state.show_registration = False
+st.session_state.setdefault("show_registration", False)
 
 def student_dashboard():
     student_data=st.session_state.student_data
@@ -135,9 +134,9 @@ def student_screen():
                         st.rerun()
                 else:
                     st.error("Face not recognized ! You might be a new student")
-                    st.session_state.show_registration = True
+                    st.session_state["show_registration"]= True
 
-    if st.session_state.show_registration:
+    if st.session_state.get("show_registration", False):
         with st.container(border=True):
             st.header("Register New Profile")
             new_name=st.text_input("Enter Your Name",placeholder="Riya Dey")
