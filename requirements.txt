@@ -4,7 +4,7 @@ pandas
 scikit-learn
 
 face-recognition==1.3.0
-face-recognition-models==0.3.0
+opencv-python-headless
 
 supabase
 bcrypt
@@ -13,4 +13,3 @@ Pillow
 
 librosa
 resemblyzer
-opencv-python-headless
