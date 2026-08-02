@@ -1,15 +1,16 @@
-streamlit
-numpy
-pandas
-scikit-learn
+streamlit==1.60.0
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.2
 
 face-recognition==1.3.0
-opencv-python-headless
+opencv-python-headless==4.10.0.84
 
-supabase
+supabase==2.31.0
 bcrypt
 segno
 Pillow
 
-librosa
-resemblyzer
+librosa==0.10.2.post1
+resemblyzer==0.1.4
+torch==2.2.2
